@@ -118,10 +118,6 @@ function App() {
     setActiveKey('');
   }
 
-  function handleKeyHighlights(keyhighlights) {
-    setKeyHighlights((h) => ({ ...h, keyhighlights }));
-  }
-
   useEffect(() => {
     window.addEventListener('keydown', handleKeystroke);
     window.addEventListener('keyup', handleKeyUp);
