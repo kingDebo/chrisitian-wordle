@@ -1,0 +1,845 @@
+{
+  "names": [
+    {
+      "name": "Aaron",
+      "description": "Brother of Moses and first high priest",
+      "verse": "Exodus 4:14"
+    },
+    {
+      "name": "Abner",
+      "description": "Commander of Saul's army",
+      "verse": "1 Samuel 14:50"
+    },
+    {
+      "name": "Abram",
+      "description": "Original name of Abraham, the father of many nations",
+      "verse": "Genesis 17:5"
+    },
+    {
+      "name": "Adoni",
+      "description": "King Adoni-Zedek of Jerusalem",
+      "verse": "Joshua 10:1"
+    },
+    {
+      "name": "Amasa",
+      "description": "Commander of Absalom\u2019s army",
+      "verse": "2 Samuel 17:25"
+    },
+    {
+      "name": "Amnon",
+      "description": "Son of David, known for assaulting Tamar",
+      "verse": "2 Samuel 13:1"
+    },
+    {
+      "name": "Asaph",
+      "description": "Levite and psalmist appointed by David",
+      "verse": "1 Chronicles 6:39"
+    },
+    {
+      "name": "Asher",
+      "description": "Son of Jacob; ancestor of the tribe of Asher",
+      "verse": "Genesis 30:13"
+    },
+    {
+      "name": "Balak",
+      "description": "King of Moab who opposed Israel",
+      "verse": "Numbers 22:2"
+    },
+    {
+      "name": "Barak",
+      "description": "Military leader who defeated Sisera",
+      "verse": "Judges 4:6"
+    },
+    {
+      "name": "Beeri",
+      "description": "Father of the prophet Hosea",
+      "verse": "Hosea 1:1"
+    },
+    {
+      "name": "Caleb",
+      "description": "Faithful spy and leader of Judah",
+      "verse": "Numbers 13:6"
+    },
+    {
+      "name": "David",
+      "description": "Second king of Israel; slayer of Goliath",
+      "verse": "1 Samuel 16:13"
+    },
+    {
+      "name": "Debir",
+      "description": "King defeated by Joshua",
+      "verse": "Joshua 10:38"
+    },
+    {
+      "name": "Eglon",
+      "description": "King of Moab, killed by Ehud",
+      "verse": "Judges 3:14-22"
+    },
+    {
+      "name": "Eliab",
+      "description": "Eldest brother of David",
+      "verse": "1 Samuel 16:6"
+    },
+    {
+      "name": "Elihu",
+      "description": "Young man who spoke in the book of Job",
+      "verse": "Job 32:2"
+    },
+    {
+      "name": "Elkan",
+      "description": "Father of Samuel, husband of Hannah",
+      "verse": "1 Samuel 1:1"
+    },
+    {
+      "name": "Epher",
+      "description": "Grandson of Abraham through Midian",
+      "verse": "Genesis 25:4"
+    },
+    {
+      "name": "Enoch",
+      "description": "Walked faithfully with God and was taken to heaven",
+      "verse": "Genesis 5:24"
+    },
+    {
+      "name": "Ethan",
+      "description": "A wise man in Solomon's time",
+      "verse": "1 Kings 4:31"
+    },
+    {
+      "name": "Felix",
+      "description": "Roman procurator of Judea who imprisoned Paul.",
+      "verse": "Acts 24:27"
+    },
+    {
+      "name": "Gomer",
+      "description": "Wife of Hosea, symbolic of Israel\u2019s unfaithfulness",
+      "verse": "Hosea 1:3"
+    },
+    {
+      "name": "Hagar",
+      "description": "Sarah\u2019s maid and mother of Ishmael",
+      "verse": "Genesis 16:1"
+    },
+    {
+      "name": "Haman",
+      "description": "Villain in the book of Esther",
+      "verse": "Esther 3:1"
+    },
+    {
+      "name": "Helez",
+      "description": "One of David\u2019s mighty warriors",
+      "verse": "2 Samuel 23:26"
+    },
+    {
+      "name": "Herod",
+      "description": "King during Jesus\u2019 birth who ordered massacre",
+      "verse": "Matthew 2:1"
+    },
+    {
+      "name": "Hiram",
+      "description": "King of Tyre who provided materials for Solomon",
+      "verse": "1 Kings 5:1"
+    },
+    {
+      "name": "Hosea",
+      "description": "Prophet who wrote the book of Hosea",
+      "verse": "Hosea 1:1"
+    },
+    {
+      "name": "Isaac",
+      "description": "Son of Abraham and Sarah, and father of Jacob",
+      "verse": "Genesis 21:3"
+    },
+    {
+      "name": "Ishma",
+      "description": "One of David\u2019s mighty warriors",
+      "verse": "1 Chronicles 11:44"
+    },
+    {
+      "name": "Ithai",
+      "description": "Gittite who loyally followed David",
+      "verse": "2 Samuel 15:19"
+    },
+    {
+      "name": "Jacob",
+      "description": "Son of Isaac; father of the 12 tribes",
+      "verse": "Genesis 25:26"
+    },
+    {
+      "name": "James",
+      "description": "Brother of Jesus and leader in the early church",
+      "verse": "James 1:1"
+    },
+    {
+      "name": "Jason",
+      "description": "Early Christian who hosted Paul",
+      "verse": "Acts 17:5-7"
+    },
+    {
+      "name": "Jesse",
+      "description": "Father of King David.",
+      "verse": "1 Samuel 16:1"
+    },
+    {
+      "name": "Jesus",
+      "description": "The Son of God, Savior and central figure of the New Testament",
+      "verse": "Matthew 1:21"
+    },
+    {
+      "name": "Joash",
+      "description": "King of Judah who repaired the temple",
+      "verse": "2 Kings 12:2"
+    },
+    {
+      "name": "Jonah",
+      "description": "Prophet swallowed by a great fish",
+      "verse": "Jonah 1:17"
+    },
+    {
+      "name": "Jonas",
+      "description": "Greek form of Jonah",
+      "verse": "Matthew 16:17"
+    },
+    {
+      "name": "Joram",
+      "description": "King of Israel and Judah",
+      "verse": "2 Kings 8:16"
+    },
+    {
+      "name": "Joses",
+      "description": "Brother of Jesus (variant of Joseph)",
+      "verse": "Matthew 13:55"
+    },
+    {
+      "name": "Lotan",
+      "description": "Descendant of Seir the Horite",
+      "verse": "Genesis 36:20"
+    },
+    {
+      "name": "Micah",
+      "description": "Minor prophet and book of prophecy",
+      "verse": "Micah 1:1"
+    },
+    {
+      "name": "Moses",
+      "description": "Led the Israelites out of Egypt",
+      "verse": "Exodus 3:10"
+    },
+    {
+      "name": "Naomi",
+      "description": "Mother-in-law of Ruth",
+      "verse": "Ruth 1:2"
+    },
+    {
+      "name": "Nehum",
+      "description": "One of the minor prophets in Ezra's genealogy",
+      "verse": "Nehemiah 7:7"
+    },
+    {
+      "name": "Palti",
+      "description": "One of the twelve spies",
+      "verse": "Numbers 13:9"
+    },
+    {
+      "name": "Peter",
+      "description": "Apostle, fisherman, and early church leader",
+      "verse": "Matthew 4:18"
+    },
+    {
+      "name": "Rhoda",
+      "description": "Servant girl who recognized Peter's voice",
+      "verse": "Acts 12:13"
+    },
+    {
+      "name": "Rufus",
+      "description": "Christian greeted by Paul in Romans",
+      "verse": "Romans 16:13"
+    },
+    {
+      "name": "Salim",
+      "description": "Place near Aenon where John baptized",
+      "verse": "John 3:23"
+    },
+    {
+      "name": "Sarah",
+      "description": "Wife of Abraham and mother of Isaac.",
+      "verse": "Genesis 17:15"
+    },
+    {
+      "name": "Satan",
+      "description": "Adversary and accuser in the Bible",
+      "verse": "Job 1:6"
+    },
+    {
+      "name": "Sheba",
+      "description": "Queen who visited Solomon",
+      "verse": "1 Kings 10:1"
+    },
+    {
+      "name": "Silas",
+      "description": "Companion of Paul on missionary journeys",
+      "verse": "Acts 15:40"
+    },
+    {
+      "name": "Simon",
+      "description": "Includes Simon Peter and Simon the Zealot",
+      "verse": "Luke 6:15"
+    },
+    {
+      "name": "Tamar",
+      "description": "Daughter-in-law of Judah",
+      "verse": "Genesis 38:6"
+    },
+    {
+      "name": "Titus",
+      "description": "Companion of Paul; recipient of a pastoral epistle",
+      "verse": "Titus 1:4"
+    },
+    {
+      "name": "Uriah",
+      "description": "Hittite soldier in David's army",
+      "verse": "2 Samuel 11:3"
+    },
+    {
+      "name": "Uzzah",
+      "description": "Touched the Ark and died",
+      "verse": "2 Samuel 6:6-7"
+    },
+    {
+      "name": "Zadok",
+      "description": "High priest during the reign of King David",
+      "verse": "2 Samuel 8:17"
+    },
+    {
+      "name": "Zebah",
+      "description": "Midianite king defeated by Gideon",
+      "verse": "Judges 8:5"
+    },
+    {
+      "name": "Zebud",
+      "description": "Son of Nathan; official of Solomon",
+      "verse": "1 Kings 4:5"
+    },
+    {
+      "name": "Zenas",
+      "description": "Christian lawyer mentioned by Paul",
+      "verse": "Titus 3:13"
+    },
+    {
+      "name": "Zerah",
+      "description": "Son of Judah and Tamar",
+      "verse": "Genesis 38:30"
+    },
+    {
+      "name": "Zimri",
+      "description": "King of Israel who reigned for seven days",
+      "verse": "1 Kings 16:15"
+    },
+    {
+      "name": "Zohar",
+      "description": "Father of Ephron the Hittite",
+      "verse": "Genesis 23:8"
+    }
+  ],
+  "places": [
+    {
+      "name": "Adami",
+      "description": "A location near Zered; in Naphtali\u2019s territory",
+      "verse": "Joshua 19:33"
+    },
+    {
+      "name": "Aroer",
+      "description": "A city east of the Jordan River",
+      "verse": "Deuteronomy 2:36"
+    },
+    {
+      "name": "Babel",
+      "description": "Where God confused human language",
+      "verse": "Genesis 11:9"
+    },
+    {
+      "name": "Betel",
+      "description": "Another form of Bethel, \u201chouse of God\u201d",
+      "verse": "Genesis 28:19"
+    },
+    {
+      "name": "Bozra",
+      "description": "City in Edom, known for judgment prophecies",
+      "verse": "Isaiah 63:1"
+    },
+    {
+      "name": "Cabul",
+      "description": "A region near Tyre given to Hiram",
+      "verse": "1 Kings 9:13"
+    },
+    {
+      "name": "Chios",
+      "description": "An island Paul passed on his journey",
+      "verse": "Acts 20:15"
+    },
+    {
+      "name": "Debir",
+      "description": "City defeated by Joshua",
+      "verse": "Joshua 10:38"
+    },
+    {
+      "name": "Dibon",
+      "description": "Town east of Jordan, Moabite region",
+      "verse": "Numbers 21:30"
+    },
+    {
+      "name": "Ebron",
+      "description": "Likely a variant of Hebron (less common)",
+      "verse": "Genesis 46:8"
+    },
+    {
+      "name": "Gedor",
+      "description": "Town in Judah",
+      "verse": "1 Chronicles 4:39"
+    },
+    {
+      "name": "Gibea",
+      "description": "Variant of Gibeah",
+      "verse": "1 Samuel 10:26"
+    },
+    {
+      "name": "Golan",
+      "description": "City of refuge",
+      "verse": "Deuteronomy 4:43"
+    },
+    {
+      "name": "Hazor",
+      "description": "Major Canaanite city defeated by Joshua",
+      "verse": "Joshua 11:10"
+    },
+    {
+      "name": "Helam",
+      "description": "Battle site where David fought Arameans",
+      "verse": "2 Samuel 10:16"
+    },
+    {
+      "name": "Horem",
+      "description": "One of the towns in Naphtali",
+      "verse": "Joshua 19:38"
+    },
+    {
+      "name": "Jokim",
+      "description": "Mentioned in priestly genealogy",
+      "verse": "1 Chronicles 24:24"
+    },
+    {
+      "name": "Lodow",
+      "description": "Possibly a variant, may need verification",
+      "verse": "N/A"
+    },
+    {
+      "name": "Merom",
+      "description": "Lake in northern Israel, site of battle",
+      "verse": "Joshua 11:5"
+    },
+    {
+      "name": "Mizpe",
+      "description": "Short for Mizpeh or Mizpah",
+      "verse": "Judges 10:17"
+    },
+    {
+      "name": "Nobah",
+      "description": "Man and city in Gilead",
+      "verse": "Numbers 32:42"
+    },
+    {
+      "name": "Perga",
+      "description": "Paul preached here during his journeys",
+      "verse": "Acts 13:13"
+    },
+    {
+      "name": "Ramah",
+      "description": "Hometown of Samuel the prophet",
+      "verse": "1 Samuel 1:1"
+    },
+    {
+      "name": "Salem",
+      "description": "Melchizedek\u2019s city, possibly Jerusalem",
+      "verse": "Genesis 14:18"
+    },
+    {
+      "name": "Salim",
+      "description": "Near Aenon, where John baptized",
+      "verse": "John 3:23"
+    },
+    {
+      "name": "Sheba",
+      "description": "Kingdom visited Solomon with gifts",
+      "verse": "1 Kings 10:1"
+    },
+    {
+      "name": "Sidon",
+      "description": "Coastal city of Phoenicia",
+      "verse": "Matthew 15:21"
+    },
+    {
+      "name": "Sinai",
+      "description": "Mountain where Moses received the Law",
+      "verse": "Exodus 19:11"
+    },
+    {
+      "name": "Sodom",
+      "description": "City destroyed for its wickedness",
+      "verse": "Genesis 19:24"
+    },
+    {
+      "name": "Tabor",
+      "description": "Mountain in Israel, site of Deborah\u2019s battle",
+      "verse": "Judges 4:6"
+    },
+    {
+      "name": "Tamar",
+      "description": "Outpost in southern Judah",
+      "verse": "Ezekiel 47:19"
+    },
+    {
+      "name": "Zelah",
+      "description": "Town in Benjamin where Saul was buried",
+      "verse": "2 Samuel 21:14"
+    },
+    {
+      "name": "Zoara",
+      "description": "Town spared from Sodom's destruction",
+      "verse": "Genesis 19:22"
+    }
+  ],
+  "animals": [
+    {
+      "name": "Beast",
+      "description": "Generic term for wild animals or symbolic creatures",
+      "verse": "Daniel 7:3"
+    },
+    {
+      "name": "Camel",
+      "description": "Desert animal used for travel",
+      "verse": "Genesis 24:10"
+    },
+    {
+      "name": "Coney",
+      "description": "Rock badger, shy animal",
+      "verse": "Proverbs 30:26"
+    },
+    {
+      "name": "Crane",
+      "description": "Long-legged bird",
+      "verse": "Isaiah 38:14"
+    },
+    {
+      "name": "Eagle",
+      "description": "Symbol of strength and renewal",
+      "verse": "Isaiah 40:31"
+    },
+    {
+      "name": "Horse",
+      "description": "Used in war and royalty",
+      "verse": "Exodus 15:1"
+    },
+    {
+      "name": "Lambs",
+      "description": "Young sheep used in offerings",
+      "verse": "Exodus 12:3"
+    },
+    {
+      "name": "Mouse",
+      "description": "Unclean animal",
+      "verse": "Isaiah 66:17"
+    },
+    {
+      "name": "Quail",
+      "description": "Bird God provided in the wilderness",
+      "verse": "Exodus 16:13"
+    },
+    {
+      "name": "Raven",
+      "description": "Bird used by Noah",
+      "verse": "Genesis 8:7"
+    },
+    {
+      "name": "Sheep",
+      "description": "Common livestock, symbol of God\u2019s people",
+      "verse": "Psalm 100:3"
+    },
+    {
+      "name": "Snake",
+      "description": "Serpent; often symbolizes deception or evil",
+      "verse": "Genesis 3:1"
+    },
+    {
+      "name": "Snail",
+      "description": "Slow-moving creature",
+      "verse": "Psalm 58:8"
+    },
+    {
+      "name": "Stork",
+      "description": "Migratory bird",
+      "verse": "Zechariah 5:9"
+    },
+    {
+      "name": "Swine",
+      "description": "Unclean pig",
+      "verse": "Matthew 7:6"
+    }
+  ],
+  "things": [
+    {
+      "name": "Altar",
+      "description": "A structure for offerings or sacrifices",
+      "verse": "Exodus 20:24"
+    },
+    {
+      "name": "Arrow",
+      "description": "Projectile weapon shot from a bow",
+      "verse": "2 Kings 13:15"
+    },
+    {
+      "name": "Bands",
+      "description": "Bindings or ties, often symbolic",
+      "verse": "Jeremiah 2:20"
+    },
+    {
+      "name": "Bason",
+      "description": "Bowl used for washing or sacrifices",
+      "verse": "Exodus 24:6"
+    },
+    {
+      "name": "Beams",
+      "description": "Structural supports in buildings",
+      "verse": "1 Kings 6:9"
+    },
+    {
+      "name": "Bells",
+      "description": "Attached to priestly garments",
+      "verse": "Exodus 28:33-34"
+    },
+    {
+      "name": "Blood",
+      "description": "Symbol of life and used in sacrifices",
+      "verse": "Leviticus 17:11"
+    },
+    {
+      "name": "Bread",
+      "description": "Staple food, often symbolizing life",
+      "verse": "John 6:35"
+    },
+    {
+      "name": "Cakes",
+      "description": "Unleavened bread or offerings",
+      "verse": "Leviticus 2:4"
+    },
+    {
+      "name": "Cords",
+      "description": "Ropes or bindings",
+      "verse": "Ecclesiastes 12:6"
+    },
+    {
+      "name": "Chain",
+      "description": "Used for binding or as ornament",
+      "verse": "Jeremiah 40:1"
+    },
+    {
+      "name": "Crown",
+      "description": "Head ornament representing kingship",
+      "verse": "2 Samuel 12:30"
+    },
+    {
+      "name": "Cubit",
+      "description": "Ancient unit of length",
+      "verse": "Genesis 6:15"
+    },
+    {
+      "name": "Darts",
+      "description": "Small thrown weapons",
+      "verse": "2 Samuel 18:14"
+    },
+    {
+      "name": "Dress",
+      "description": "Clothing or garments",
+      "verse": "Genesis 41:42"
+    },
+    {
+      "name": "Ephod",
+      "description": "Priestly garment",
+      "verse": "Exodus 28:6"
+    },
+    {
+      "name": "Flesh",
+      "description": "Body or human nature",
+      "verse": "Genesis 2:23"
+    },
+    {
+      "name": "Flour",
+      "description": "Ground grain used in offerings",
+      "verse": "Leviticus 2:1"
+    },
+    {
+      "name": "Glass",
+      "description": "Material, often symbolizing clarity",
+      "verse": "Job 28:17"
+    },
+    {
+      "name": "Grass",
+      "description": "Symbol of fleeting life",
+      "verse": "Isaiah 40:6"
+    },
+    {
+      "name": "Honey",
+      "description": "Sweet food, symbol of abundance",
+      "verse": "Exodus 3:8"
+    },
+    {
+      "name": "Horns",
+      "description": "Used on altars, symbol of strength",
+      "verse": "Exodus 27:2"
+    },
+    {
+      "name": "Horse",
+      "description": "Used in war and transport",
+      "verse": "Exodus 14:9"
+    },
+    {
+      "name": "House",
+      "description": "Dwelling place or temple",
+      "verse": "Matthew 21:13"
+    },
+    {
+      "name": "Knife",
+      "description": "Cutting tool, used in sacrifices",
+      "verse": "Genesis 22:6"
+    },
+    {
+      "name": "Lamps",
+      "description": "Used for light, symbolic of guidance",
+      "verse": "Matthew 25:1"
+    },
+    {
+      "name": "Linen",
+      "description": "Fine cloth for priestly garments",
+      "verse": "Exodus 28:42"
+    },
+    {
+      "name": "Manna",
+      "description": "Food from heaven for the Israelites",
+      "verse": "Exodus 16:31"
+    },
+    {
+      "name": "Money",
+      "description": "Used in trade and offerings",
+      "verse": "Matthew 22:19"
+    },
+    {
+      "name": "Music",
+      "description": "Instrumental and vocal worship",
+      "verse": "Psalm 150:4"
+    },
+    {
+      "name": "Nails",
+      "description": "Used in construction and crucifixion",
+      "verse": "John 20:25"
+    },
+    {
+      "name": "Olive",
+      "description": "Tree or oil, symbol of peace",
+      "verse": "Genesis 8:11"
+    },
+    {
+      "name": "Onion",
+      "description": "Food item mentioned in Egypt",
+      "verse": "Numbers 11:5"
+    },
+    {
+      "name": "Paper",
+      "description": "Writing material",
+      "verse": "2 John 1:12"
+    },
+    {
+      "name": "Pitch",
+      "description": "Waterproofing material",
+      "verse": "Genesis 6:14"
+    },
+    {
+      "name": "Rings",
+      "description": "Jewelry or symbolic items",
+      "verse": "Exodus 35:22"
+    },
+    {
+      "name": "Ropes",
+      "description": "Used to bind or measure",
+      "verse": "Judges 15:13"
+    },
+    {
+      "name": "Shaft",
+      "description": "Part of weapon or spear",
+      "verse": "Habakkuk 3:11"
+    },
+    {
+      "name": "Shoes",
+      "description": "Footwear, sometimes removed on holy ground",
+      "verse": "Exodus 3:5"
+    },
+    {
+      "name": "Skins",
+      "description": "Animal hides, used for clothing",
+      "verse": "Genesis 3:21"
+    },
+    {
+      "name": "Snare",
+      "description": "Trap, often symbolic of temptation",
+      "verse": "Psalm 124:7"
+    },
+    {
+      "name": "Staff",
+      "description": "Walking stick or symbol of leadership",
+      "verse": "Exodus 4:2"
+    },
+    {
+      "name": "Stone",
+      "description": "Building material or altar component",
+      "verse": "Genesis 28:18"
+    },
+    {
+      "name": "Sword",
+      "description": "Weapon, symbolic of judgment",
+      "verse": "Ephesians 6:17"
+    },
+    {
+      "name": "Table",
+      "description": "Furniture for meals or showbread",
+      "verse": "Exodus 25:23"
+    },
+    {
+      "name": "Tares",
+      "description": "Weeds in parable of the sower",
+      "verse": "Matthew 13:25"
+    },
+    {
+      "name": "Thorn",
+      "description": "Plant with sharp points",
+      "verse": "Genesis 3:18"
+    },
+    {
+      "name": "Tower",
+      "description": "Structure for defense or observation",
+      "verse": "Judges 9:51"
+    },
+    {
+      "name": "Water",
+      "description": "Essential for life, symbolic of cleansing",
+      "verse": "John 4:14"
+    },
+    {
+      "name": "Wheel",
+      "description": "Used in transport, sometimes symbolic",
+      "verse": "Ezekiel 1:16"
+    },
+    {
+      "name": "Woods",
+      "description": "Trees or forest, resource for building",
+      "verse": "Joshua 17:15"
+    }
+  ]
+}
