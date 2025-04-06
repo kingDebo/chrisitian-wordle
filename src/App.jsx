@@ -16,7 +16,7 @@ import {
 } from './utils';
 import Birds from './Birds';
 import { useRef } from 'react';
-import Dialog from './Dialog';
+import Dialog, { LossDialog } from './Dialog';
 
 function App() {
   const [wordAttempts, setWordAttempts] = useState(['']);
@@ -26,6 +26,7 @@ function App() {
   const [shouldGenerateWord, setShouldGenerateWord] = useState(true);
   const [targetWord, setTargetWord] = useState('');
   const dialogRef = useRef(null);
+  const lossDialogRef = useRef(null);
 
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -64,7 +65,7 @@ function App() {
     if (wordAttempts[currentAttempts] === targetWord.name) {
       setHasWon(true);
     } else if (currentAttempts >= chances - 1) {
-      alert("You've lost");
+      lossDialogRef.current.showModal();
     }
   }
 
@@ -143,6 +144,7 @@ function App() {
   return (
     <div className="App flex h-full w-full overflow-hidden p-2 sm:p-8">
       <Dialog ref={dialogRef} targetWord={targetWord} />
+      <LossDialog ref={lossDialogRef} targetWord={targetWord} />
       <div className="absolute">
         <Toaster
           position="top-center"
