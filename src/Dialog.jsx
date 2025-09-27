@@ -1,3 +1,5 @@
+import { X as XIcon } from 'lucide-react';
+
 export default function Dialog({ ref, targetWord }) {
   return (
     <dialog
@@ -6,14 +8,14 @@ export default function Dialog({ ref, targetWord }) {
     >
       <div
         onClick={() => ref.current.close()}
-        className="absolute top-2 left-4 cursor-pointer"
+        className="absolute top-4 left-4 cursor-pointer text-amber-900"
       >
-        X
+        <XIcon size={24} />
       </div>
       <h1 className="text-3xl font-medium">
         <span className="text-green-700">Congratulations!</span> You've Won!
       </h1>
-      <h2 className="font-serif text-3xl font-bold">{targetWord.name}</h2>
+      <h2 className="font-neuton text-3xl font-bold">{targetWord.name}</h2>
       <p>{targetWord.description}</p>
       <p>{targetWord.verse}</p>
     </dialog>
@@ -33,7 +35,7 @@ export function LossDialog({ ref, targetWord }) {
         X
       </div>
       <h1 className="text-3xl font-medium">Uh oh, unlucky! the word was:</h1>
-      <h2 className="font-serif text-3xl font-bold">{targetWord.name}</h2>
+      <h2 className="font-neuton text-3xl font-bold">{targetWord.name}</h2>
       <p>{targetWord.description}</p>
       <p>{targetWord.verse}</p>
     </dialog>

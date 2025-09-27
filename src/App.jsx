@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 import categories from './words.json';
 import { Toaster, toast } from 'sonner';
+import { RotateCwIcon } from 'lucide-react';
+import { motion } from 'motion/react';
 
 import './App.css';
 import Guess from './Guess';
@@ -10,7 +12,6 @@ import {
   getRandomNumber,
   chances,
   matcher,
-  getAllNames,
   getRandomCategory,
   getNamesByCategory,
 } from './utils';
@@ -48,6 +49,13 @@ function App() {
       return g;
     });
     setShouldGenerateWord(false);
+  }
+
+  function resetGame() {
+    setWordAttempts(['']);
+    setHasWon(null);
+    setShouldGenerateWord(true);
+    setShowConfetti(false);
   }
 
   function handleSubmit() {
@@ -130,15 +138,9 @@ function App() {
   }, [handleKeystroke]);
 
   useEffect(() => {
-    let alertTimeout;
-
     if (hasWon) {
       setShowConfetti(true);
     }
-
-    return () => {
-      clearTimeout(alertTimeout);
-    };
   }, [hasWon]);
 
   return (
@@ -194,14 +196,31 @@ function App() {
             );
           })}
           <div className="text-xs font-bold text-amber-900 capitalize">
-            Category: {targetWord.category}
+            {hasWon || currentAttempts >= chances
+              ? `Answer: ${targetWord.name}`
+              : `Category: ${targetWord.category}`}
           </div>
         </div>
-        <Keyboard
-          activeKey={activeKey}
-          wordAttempts={wordAttempts}
-          targetWord={targetWord.name}
-        />
+        {currentAttempts >= chances || hasWon ? (
+          <div>
+            <motion.button
+              onTap={resetGame}
+              whileTap={{
+                scale: 0.98,
+              }}
+              className="rounded-sm bg-amber-900 px-4 py-2 text-amber-50"
+            >
+              Start a new game
+              <RotateCwIcon className="inline pl-1 group-active:animate-spin" />
+            </motion.button>
+          </div>
+        ) : (
+          <Keyboard
+            activeKey={activeKey}
+            wordAttempts={wordAttempts}
+            targetWord={targetWord.name}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react';
+import { memo } from 'react';
 import { motion } from 'motion/react';
 import cn from './utils';
 import { useState } from 'react';
@@ -7,11 +7,20 @@ import { useRef } from 'react';
 export default memo(function Guess({ isSubmitted, guess, targetWord }) {
   const [highlights, setHighlights] = useState([]);
   const prevIsSubmitted = useRef(isSubmitted);
+  const prevTargetWord = useRef(targetWord);
+
+  if (targetWord !== prevTargetWord.current) {
+    setHighlights([]);
+    prevTargetWord.current = targetWord;
+  }
 
   if (isSubmitted !== prevIsSubmitted.current) {
     prevIsSubmitted.current = isSubmitted;
     isSubmitted && generateHighlights();
   }
+
+  // console.log(highlights);
+  // console.log('Prev :' + prevIsSubmitted.current + 'Current :' + isSubmitted);
 
   function generateHighlights() {
     const tempHighlights = Array(5).fill('bg-neutral-500 text-amber-50');
@@ -67,11 +76,3 @@ export default memo(function Guess({ isSubmitted, guess, targetWord }) {
     </div>
   );
 });
-
-const letterBox = {
-  backgroundColor: 'gray',
-  color: 'white',
-  display: 'grid',
-  placeContent: 'center',
-  transition: 'background-color 500ms ease-in',
-};

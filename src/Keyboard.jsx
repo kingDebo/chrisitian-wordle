@@ -105,8 +105,8 @@ const KeyboardKey = memo(function KeyboardKey({
   return (
     <>
       <motion.button
-        animate={{ scale: isActive ? 0.5 : 1 }}
-        whileTap={{ scale: 0.85 }}
+        animate={{ scale: isActive ? 0.75 : 1 }}
+        whileTap={{ scale: 0.92 }}
         onMouseDown={() => handleMouseDown(letter)}
         onMouseUp={() => handleMouseUp(letter)}
         style={{
