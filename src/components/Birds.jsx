@@ -1,4 +1,4 @@
-import birdAnimation from './assets/Bird-Lottie.json';
+import birdAnimation from '../assets/Bird-Lottie.json';
 import Lottie from 'react-lottie';
 import { memo } from 'react';
 

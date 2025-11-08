@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { memo, useState, useRef } from 'react';
 
-import cn from './utils';
-import Delete from './assets/delete.svg?react';
+import cn from '../utils';
+import Delete from '../assets/delete.svg?react';
 import { Fragment } from 'react';
 
 export default function Keyboard({ activeKey, wordAttempts, targetWord }) {

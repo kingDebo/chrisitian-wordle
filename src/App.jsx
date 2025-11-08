@@ -6,8 +6,8 @@ import { RotateCwIcon } from 'lucide-react';
 import { motion } from 'motion/react';
 
 import './App.css';
-import Guess from './Guess';
-import Keyboard from './Keyboard';
+import Guess from './components/Guess';
+import Keyboard from './components/Keyboard';
 import {
   getRandomNumber,
   chances,
@@ -15,9 +15,10 @@ import {
   getRandomCategory,
   getNamesByCategory,
 } from './utils';
-import Birds from './Birds';
+import Birds from './components/Birds';
 import { useRef } from 'react';
-import Dialog, { LossDialog } from './Dialog';
+import Dialog, { LossDialog } from './components/Dialog';
+import Board from './components/Board';
 
 function App() {
   const [wordAttempts, setWordAttempts] = useState(['']);
@@ -178,29 +179,17 @@ function App() {
           onConfettiComplete={() => dialogRef.current.showModal()}
         />
       )}
-      <div className="relative top-1/2 flex h-[min(750px,100vh)] w-full -translate-y-1/2 transform flex-col items-center justify-around p-2">
+      <div className="relative top-1/2 flex h-[min(750px,100vh)] w-full -translate-y-1/2 transform flex-col items-center justify-around bg-amber-50 p-2">
         <h1 className="font-neuton min-h-0 w-full flex-shrink text-center text-5xl leading-[-4%] font-extrabold text-amber-900">
           Bible Wordle
         </h1>
-        <div
-          className={`grid grid-rows-[${chances}] min-h-0 max-w-xs min-w-64 flex-shrink gap-2 sm:w-full`}
-        >
-          {Array.from({ length: chances }).map((_, level) => {
-            return (
-              <Guess
-                key={level}
-                guess={wordAttempts[level]}
-                targetWord={targetWord.name}
-                isSubmitted={currentAttempts > level}
-              />
-            );
-          })}
-          <div className="text-xs font-bold text-amber-900 capitalize">
-            {hasWon || currentAttempts >= chances
-              ? `Answer: ${targetWord.name}`
-              : `Category: ${targetWord.category}`}
-          </div>
-        </div>
+        <Board
+          chances={chances}
+          wordAttempts={wordAttempts}
+          targetWord={targetWord}
+          currentAttempts={currentAttempts}
+          hasWon={hasWon}
+        />
         {currentAttempts >= chances || hasWon ? (
           <div>
             <motion.button
