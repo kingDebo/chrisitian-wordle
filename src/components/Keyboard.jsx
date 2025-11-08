@@ -7,9 +7,9 @@ import { Fragment } from 'react';
 
 export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
   const keyboardKeys = [
-    ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'Backspace'],
-    ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Enter'],
-    ['Z', 'X', 'C', 'V', 'B', 'N', 'M'],
+    ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+    [' ', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ' '],
+    ['Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Enter', 'Backspace'],
   ];
 
   const [highlights, setHighlights] = useState({});
@@ -53,16 +53,12 @@ export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
   }
 
   return (
-    <div className="flex min-h-0 w-full max-w-xl min-w-0 flex-shrink flex-col items-center gap-1">
+    <div className="flex h-1/4 w-full max-w-xl min-w-0 flex-col items-center gap-1">
       {keyboardKeys.map((keyRow, row) => (
-        <div
-          key={row}
-          className={cn(
-            `grid w-full grid-flow-col grid-cols-12 gap-0.5 sm:gap-1`,
-          )}
-        >
+        <div key={row} className={cn(`flex h-full w-full gap-0.5 sm:gap-1`)}>
           {keyRow.map((key, index) => (
             <KeyboardKey
+              row={row}
               key={key}
               offset={Math.ceil((12 - keyRow.length) / 2) + index}
               letter={key}
@@ -81,6 +77,7 @@ const KeyboardKey = memo(function KeyboardKey({
   isActive,
   offset,
   highlight,
+  row,
 }) {
   function handleMouseDown(key) {
     window.dispatchEvent(
@@ -113,8 +110,9 @@ const KeyboardKey = memo(function KeyboardKey({
           gridColumnStart: offset,
         }}
         className={cn(
-          `grid h-full w-full min-w-fit cursor-pointer place-content-center rounded-sm bg-amber-900 text-base leading-12 text-amber-50`,
-          (letter === 'Enter' || letter === 'Backspace') && 'col-span-2',
+          `grid h-full min-w-fit flex-1 cursor-pointer place-content-center rounded-sm bg-amber-900 text-base leading-12 text-amber-50`,
+          (letter === 'Enter' || letter === 'Backspace') && 'flex-[1.5]',
+          letter === ' ' && 'flex-[.5] bg-transparent',
           highlight,
           isActive && 'bg-amber-500',
         )}
@@ -123,8 +121,7 @@ const KeyboardKey = memo(function KeyboardKey({
           letter
         ) : (
           <Fragment>
-            <span className="hidden sm:block">{letter}</span>
-            <Delete className="stroke-1 text-[2px] text-amber-50 sm:hidden" />
+            <Delete className="stroke-1 text-[2px] text-amber-50" />
           </Fragment>
         )}
       </motion.button>

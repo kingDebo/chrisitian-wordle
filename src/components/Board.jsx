@@ -10,7 +10,7 @@ export default function Board({
 }) {
   return (
     <div
-      className={`grid grid-rows-[${chances}] min-h-0 w-full min-w-64 flex-shrink gap-1 bg-amber-100 sm:w-full sm:max-w-xs md:gap-2`}
+      className={`grid grid-rows-[${chances}] w-full max-w-[300px] min-w-64 gap-1 sm:w-full sm:max-w-xs md:gap-2`}
     >
       {Array.from({ length: chances }).map((_, level) => {
         return (

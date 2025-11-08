@@ -145,7 +145,7 @@ function App() {
   }, [hasWon]);
 
   return (
-    <div className="App flex h-full w-full overflow-hidden p-2 sm:p-8">
+    <div className="App flex h-[100svh] w-full overflow-x-hidden p-2 sm:h-[100dvh] sm:p-8">
       <Dialog ref={dialogRef} targetWord={targetWord} />
       <LossDialog ref={lossDialogRef} targetWord={targetWord} />
       <div className="absolute">
@@ -162,12 +162,13 @@ function App() {
       </div>
       <Birds />
       <img
-        className="absolute inset-0 -z-20 h-screen w-screen text-amber-900"
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
         src="/Background.webp"
         srcSet="Background@2x.webp 2x, 
                 /Background@3x.webp 3x"
         alt="Background Image - Desert Landscape"
       />
+
       {showConfetti && (
         <Confetti
           numberOfPieces={300}
@@ -179,8 +180,8 @@ function App() {
           onConfettiComplete={() => dialogRef.current.showModal()}
         />
       )}
-      <div className="relative top-1/2 flex h-[min(750px,100vh)] w-full -translate-y-1/2 transform flex-col items-center justify-around bg-amber-50 p-2">
-        <h1 className="font-neuton min-h-0 w-full flex-shrink text-center text-5xl leading-[-4%] font-extrabold text-amber-900">
+      <div className="relative flex h-full w-full transform flex-col items-center justify-around p-2 sm:top-1/2 sm:h-[min(750px,100vh)] sm:-translate-y-1/2 sm:justify-around">
+        <h1 className="font-neuton h-fit w-full flex-shrink-0 text-center text-4xl leading-[-4%] font-extrabold text-amber-900 sm:text-5xl">
           Bible Wordle
         </h1>
         <Board
@@ -190,6 +191,7 @@ function App() {
           currentAttempts={currentAttempts}
           hasWon={hasWon}
         />
+
         {currentAttempts >= chances || hasWon ? (
           <div>
             <motion.button
