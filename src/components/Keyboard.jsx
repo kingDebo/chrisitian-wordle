@@ -59,7 +59,7 @@ export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
           {keyRow.map((key, index) => (
             <KeyboardKey
               row={row}
-              key={key}
+              key={key === ' ' ? `${key}${index}` : key}
               offset={Math.ceil((12 - keyRow.length) / 2) + index}
               letter={key}
               isActive={activeKey.toUpperCase() === key.toUpperCase()}
