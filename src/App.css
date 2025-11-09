@@ -1,9 +1,10 @@
 @import './index.css';
 
-#root {
-  max-width: 1280px;
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
   text-align: center;
 }

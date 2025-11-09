@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { motion } from 'motion/react';
-import cn from './utils';
+import cn from '../utils';
 import { useState } from 'react';
 import { useRef } from 'react';
 
@@ -58,13 +58,13 @@ export default memo(function Guess({ isSubmitted, guess, targetWord }) {
   }
 
   return (
-    <div className="grid grid-cols-5 gap-2">
+    <div className="grid grid-cols-5 gap-0.5 md:gap-2">
       {Array.from({ length: 5 }).map((_, index) => {
         return (
           <motion.div
             key={index}
             className={cn(
-              'grid aspect-square place-content-center border-2 border-amber-900 text-2xl font-semibold text-amber-900',
+              'grid aspect-square place-content-center border-[2px] border-amber-900 text-2xl font-semibold text-amber-900 md:border-2',
               highlights[index],
               highlights[index] ? 'border-0' : '',
             )}
