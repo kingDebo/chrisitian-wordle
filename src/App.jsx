@@ -36,7 +36,7 @@ function App() {
   const currentAttempts = wordAttempts.length - 1;
 
   if (shouldGenerateWord) {
-    const category = getRandomCategory();
+    const category = 'things'; //getRandomCategory();
     console.log('Category: ' + category);
     const index = getRandomNumber(0, categories[category].length);
     const word = categories[category][index];
