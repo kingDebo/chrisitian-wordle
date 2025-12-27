@@ -106,9 +106,6 @@ const KeyboardKey = memo(function KeyboardKey({
         whileTap={{ scale: 0.92 }}
         onMouseDown={() => handleMouseDown(letter)}
         onMouseUp={() => handleMouseUp(letter)}
-        style={{
-          gridColumnStart: offset,
-        }}
         className={cn(
           `grid h-full min-w-fit flex-1 cursor-pointer place-content-center rounded-sm bg-amber-900 text-base leading-12 text-amber-50`,
           (letter === 'Enter' || letter === 'Backspace') && 'flex-[1.5]',
