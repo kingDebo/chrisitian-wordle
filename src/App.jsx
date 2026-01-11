@@ -19,6 +19,7 @@ import Birds from './components/Birds';
 import { useRef } from 'react';
 import Dialog, { LossDialog } from './components/Dialog';
 import Board from './components/Board';
+import ToolBar from './components/ToolBar';
 
 function App() {
   const [wordAttempts, setWordAttempts] = useState(['']);
@@ -27,6 +28,7 @@ function App() {
   const [activeKey, setActiveKey] = useState('');
   const [shouldGenerateWord, setShouldGenerateWord] = useState(true);
   const [targetWord, setTargetWord] = useState('');
+  const [category, setSelectedCategory] = useState('names');
   const dialogRef = useRef(null);
   const lossDialogRef = useRef(null);
 
@@ -36,7 +38,6 @@ function App() {
   const currentAttempts = wordAttempts.length - 1;
 
   if (shouldGenerateWord) {
-    const category = getRandomCategory();
     console.log('Category: ' + category);
     const index = getRandomNumber(0, categories[category].length);
     const word = categories[category][index];
@@ -76,6 +77,12 @@ function App() {
     } else if (currentAttempts >= chances - 1) {
       lossDialogRef.current.showModal();
     }
+  }
+
+  function handleCategoryChange(event) {
+    const category = event.target.value;
+    setSelectedCategory(category);
+    resetGame();
   }
 
   function handleKeystroke(event) {
@@ -145,75 +152,75 @@ function App() {
   }, [hasWon]);
 
   return (
-    <div className="App flex h-[100svh] w-full overflow-x-hidden p-2 sm:h-[100dvh] sm:p-8">
-      <Dialog ref={dialogRef} targetWord={targetWord} />
-      <LossDialog ref={lossDialogRef} targetWord={targetWord} />
-      <div className="absolute">
-        <Toaster
-          position="top-center"
-          toastOptions={{
-            style: {
-              backgroundColor: 'oklch(96.2% 0.059 95.617)',
-              color: 'oklch(27.9% 0.077 45.635)',
-              border: 'transparent',
-            },
-          }}
-        />
-      </div>
-      <Birds />
-      <img
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
-        src="/Background.webp"
-        srcSet="Background@2x.webp 2x, 
+    <>
+      <main className="App h-[100svh] w-full overflow-x-hidden p-2 sm:h-[100dvh] sm:p-8">
+        <Dialog ref={dialogRef} targetWord={targetWord} />
+        <LossDialog ref={lossDialogRef} targetWord={targetWord} />
+        <div className="absolute">
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              style: {
+                backgroundColor: 'oklch(96.2% 0.059 95.617)',
+                color: 'oklch(27.9% 0.077 45.635)',
+                border: 'transparent',
+              },
+            }}
+          />
+        </div>
+        <Birds />
+        <img
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          src="/Background.webp"
+          srcSet="Background@2x.webp 2x, 
                 /Background@3x.webp 3x"
-        alt="Background Image - Desert Landscape"
-      />
-
-      {showConfetti && (
-        <Confetti
-          numberOfPieces={300}
-          recycle={false}
-          height={height}
-          width={width}
-          initialVelocityY={{ min: 1, max: 13 }}
-          tweenDuration={800}
-          onConfettiComplete={() => dialogRef.current.showModal()}
-        />
-      )}
-      <div className="relative flex h-full w-full transform flex-col items-center justify-around p-2 sm:top-1/2 sm:h-[min(750px,100vh)] sm:-translate-y-1/2 sm:justify-around">
-        <h1 className="font-neuton h-fit w-full flex-shrink-0 text-center text-4xl leading-[-4%] font-extrabold text-amber-900 sm:text-5xl">
-          Bible Wordle
-        </h1>
-        <Board
-          chances={chances}
-          wordAttempts={wordAttempts}
-          targetWord={targetWord}
-          currentAttempts={currentAttempts}
-          hasWon={hasWon}
+          alt="Background Image - Desert Landscape"
         />
 
-        {currentAttempts >= chances || hasWon ? (
-          <div>
-            <motion.button
-              onTap={resetGame}
-              whileTap={{
-                scale: 0.98,
-              }}
-              className="rounded-sm bg-amber-900 px-4 py-2 text-amber-50"
-            >
-              Start a new game
-              <RotateCwIcon className="inline pl-1 group-active:animate-spin" />
-            </motion.button>
-          </div>
-        ) : (
-          <Keyboard
-            activeKey={activeKey}
-            wordAttempts={wordAttempts}
-            targetWord={targetWord.name}
+        {showConfetti && (
+          <Confetti
+            numberOfPieces={300}
+            recycle={false}
+            height={height}
+            width={width}
+            initialVelocityY={{ min: 1, max: 13 }}
+            tweenDuration={800}
+            onConfettiComplete={() => dialogRef.current.showModal()}
           />
         )}
-      </div>
-    </div>
+        <ToolBar onCategoryChange={handleCategoryChange} category={category} />
+        <div className="relative flex h-full w-full transform flex-col items-center justify-around p-2 pt-[calc(0.5rem+var(--toolbar-height))] sm:top-1/2 sm:h-[min(750px,100vh)] sm:-translate-y-1/2 sm:justify-around">
+          <Board
+            chances={chances}
+            wordAttempts={wordAttempts}
+            targetWord={targetWord}
+            currentAttempts={currentAttempts}
+            hasWon={hasWon}
+          />
+
+          {currentAttempts >= chances || hasWon ? (
+            <div>
+              <motion.button
+                onTap={resetGame}
+                whileTap={{
+                  scale: 0.98,
+                }}
+                className="rounded-sm bg-amber-900 px-4 py-2 text-amber-50"
+              >
+                Start a new game
+                <RotateCwIcon className="inline pl-1 group-active:animate-spin" />
+              </motion.button>
+            </div>
+          ) : (
+            <Keyboard
+              activeKey={activeKey}
+              wordAttempts={wordAttempts}
+              targetWord={targetWord.name}
+            />
+          )}
+        </div>
+      </main>
+    </>
   );
 }
 
