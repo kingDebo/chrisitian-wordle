@@ -21,7 +21,10 @@ export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
   }
 
   function generateHighlights() {
-    if (wordAttempts.length <= 1) return;
+    if (wordAttempts.length <= 1) {
+      setHighlights({});
+      return;
+    }
 
     setHighlights((currentHighlights) => {
       const tempHighlights = { ...currentHighlights };
@@ -72,13 +75,7 @@ export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
   );
 }
 
-const KeyboardKey = memo(function KeyboardKey({
-  letter,
-  isActive,
-  offset,
-  highlight,
-  row,
-}) {
+const KeyboardKey = memo(function KeyboardKey({ letter, isActive, highlight }) {
   function handleMouseDown(key) {
     window.dispatchEvent(
       new KeyboardEvent('keydown', {
