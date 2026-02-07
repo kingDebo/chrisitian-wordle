@@ -64,7 +64,7 @@ export default memo(function Guess({ isSubmitted, guess, targetWord }) {
           <motion.div
             key={index}
             className={cn(
-              'grid aspect-square place-content-center border-[2px] border-amber-900 text-2xl font-semibold text-amber-900 md:border-2',
+              'grid aspect-square place-content-center rounded-sm border-[2px] border-amber-900 text-2xl font-semibold text-amber-900 md:border-2',
               highlights[index],
               highlights[index] ? 'border-0 md:border-0' : '',
             )}

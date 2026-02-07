@@ -1,7 +1,7 @@
 import { Menu, Settings2 } from 'lucide-react';
-import CategorySelect from './CategorySelect';
 import { Drawer } from 'vaul';
 import BottomDrawer from './BottomDrawer';
+import { motion } from 'motion/react';
 
 export default function ToolBar({ onCategoryChange, category }) {
   return (
@@ -12,10 +12,15 @@ export default function ToolBar({ onCategoryChange, category }) {
       <div className="absolute left-4 h-8 sm:left-8">
         <Drawer.Root>
           <Drawer.Trigger>
-            <Settings2
-              strokeWidth={1.5}
-              className="aspect-auto h-8 w-8 text-amber-900"
-            />
+            <motion.div
+              className="h-8 w-8 cursor-pointer"
+              whileTap={{ scale: 0.9 }}
+            >
+              <Settings2
+                strokeWidth={1.5}
+                className="aspect-auto h-8 w-8 text-amber-900"
+              />
+            </motion.div>
           </Drawer.Trigger>
           <BottomDrawer
             onCategoryChange={onCategoryChange}
