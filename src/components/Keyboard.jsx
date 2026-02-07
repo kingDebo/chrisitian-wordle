@@ -22,7 +22,7 @@ export default function Keyboard({ activeKey, wordAttempts, targetWord }) {
 
   function generateHighlights() {
     if (wordAttempts.length <= 1) {
-      setHighlights({});
+      setHighlights({}); //Clear keyboard
       return;
     }
 

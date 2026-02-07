@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function CategorySelect({ onCategoryChange, category }) {
   return (
-    <fieldset className="m-4 flex flex-col items-center gap-2 text-base text-amber-900 [$_input]:appearance-none">
+    <fieldset className="m-4 flex flex-col items-center gap-2 text-base text-amber-900 [$_input]:appearance-none [&>label]:mb-2 [&>label]:flex [&>label]:w-full [&>label]:max-w-lg [&>label]:flex-row-reverse [&>label]:items-center [&>label]:justify-between [&>label]:rounded-sm [&>label]:border-2 [&>label]:border-amber-900 [&>label]:px-8 [&>label]:py-4 [&>label]:has-checked:border-[2.8px] [&>label]:has-checked:bg-amber-100">
       <legend className="font-xl p-4 font-semibold">Select a category</legend>
-      <label className="mb-2 flex w-full max-w-lg flex-row-reverse items-center justify-between border-2 border-amber-900 px-8 py-4 has-checked:border-[3px] has-checked:bg-amber-100">
+      <label className="">
         <input
           type="radio"
           id="names"
@@ -14,10 +14,10 @@ export default function CategorySelect({ onCategoryChange, category }) {
           checked={category === 'names'}
           onChange={onCategoryChange}
         />
-        <div className="h-4 w-4 border-2 border-amber-900 peer-checked:bg-amber-900"></div>
+        <div className="h-4 w-4 rounded-sm border-2 border-amber-900 peer-checked:bg-amber-900"></div>
         <span className="font-semibold peer-checked:font-bold">Names</span>
       </label>
-      <label className="mb-2 flex w-full max-w-lg flex-row-reverse items-center justify-between border-2 border-amber-900 px-8 py-4 has-checked:border-[3px] has-checked:bg-amber-100">
+      <label className="">
         <input
           type="radio"
           id="animals"
@@ -27,10 +27,10 @@ export default function CategorySelect({ onCategoryChange, category }) {
           checked={category === 'animals'}
           onChange={onCategoryChange}
         />
-        <div className="h-4 w-4 border-2 border-amber-900 peer-checked:bg-amber-900"></div>
+        <div className="h-4 w-4 rounded-sm border-2 border-amber-900 peer-checked:bg-amber-900"></div>
         <span className="font-semibold peer-checked:font-bold">Animals</span>
       </label>
-      <label className="mb-2 flex w-full max-w-lg flex-row-reverse items-center justify-between border-2 border-amber-900 px-8 py-4 has-checked:border-[3px] has-checked:bg-amber-100">
+      <label className="">
         <input
           type="radio"
           id="places"
@@ -40,10 +40,10 @@ export default function CategorySelect({ onCategoryChange, category }) {
           checked={category === 'places'}
           onChange={onCategoryChange}
         />
-        <div className="h-4 w-4 border-2 border-amber-900 peer-checked:bg-amber-900"></div>
+        <div className="h-4 w-4 rounded-sm border-2 border-amber-900 peer-checked:bg-amber-900"></div>
         <span className="font-semibold peer-checked:font-bold">Places</span>
       </label>
-      <label className="mb-2 flex w-full max-w-lg flex-row-reverse items-center justify-between border-2 border-amber-900 px-8 py-4 has-checked:border-[3px] has-checked:bg-amber-100">
+      <label className="">
         <input
           type="radio"
           id="things"
@@ -53,7 +53,7 @@ export default function CategorySelect({ onCategoryChange, category }) {
           checked={category === 'things'}
           onChange={onCategoryChange}
         />
-        <div className="h-4 w-4 border-2 border-amber-900 peer-checked:bg-amber-900"></div>
+        <div className="h-4 w-4 rounded-sm border-2 border-amber-900 peer-checked:bg-amber-900"></div>
         <span className="font-semibold peer-checked:font-bold">Things</span>
       </label>
     </fieldset>
